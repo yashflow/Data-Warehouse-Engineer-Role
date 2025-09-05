@@ -5,37 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>O*NET ETL Data Warehouse — README</title>
-<style>
-  :root{
-    --bg:#0f1724; --card:#0b1220; --muted:#9aa7bf; --accent:#60a5fa;
-    --panel:#071029; --ok:#10b981;
-  }
-  body{
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(180deg,#081028 0%, #051223 100%);
-    color:#e6eef8; margin:0; padding:32px;
-  }
-  .container{max-width:980px;margin:0 auto;}
-  header{margin-bottom:20px}
-  h1{font-size:28px;margin:0 0 6px;color:var(--accent)}
-  p.lead{color:var(--muted);margin:6px 0 20px}
-  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; padding:18px; box-shadow:0 6px 20px rgba(2,6,23,0.6); margin-bottom:18px}
-  h2{font-size:18px;margin:0 0 10px;color:#d9eafe}
-  p{color:var(--muted);line-height:1.5}
-  code, pre{font-family: "SFMono-Regular", Menlo, Monaco, "Roboto Mono", monospace; background:#041025; color:#cfe7ff; padding:6px 8px; border-radius:6px}
-  pre{padding:12px; overflow:auto}
-  table{width:100%; border-collapse:collapse; margin-top:10px; background:transparent}
-  th, td{padding:8px 10px; border-bottom:1px solid rgba(255,255,255,0.04); text-align:left; color: #dbeafe}
-  th{color:var(--accent); font-weight:600; font-size:13px}
-  .muted{color:var(--muted); font-size:13px}
-  .cmd{display:inline-block;background:#07172a;padding:6px 10px;border-radius:8px;color:#bfe3ff}
-  .small{font-size:13px;color:var(--muted)}
-  .ok{color:var(--ok); font-weight:600}
-  .note{background:rgba(255,255,255,0.02); padding:10px;border-radius:8px; color:var(--muted); margin-top:8px}
-  .grid{display:grid; gap:12px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr));}
-  footer{margin-top:18px;color:var(--muted); font-size:13px}
-  .btn{display:inline-block;padding:8px 12px;background:linear-gradient(90deg,var(--accent),#3b82f6);color:#021028;border-radius:8px;font-weight:700;text-decoration:none}
-</style>
+
 </head>
 <body>
 <div class="container">
