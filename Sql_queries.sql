@@ -7,7 +7,7 @@
 -- SELECT * FROM dim_skills LIMIT 5;
 
 
-# Query 1: Top 10 Skills by Importance
+-- # Query 1: Top 10 Skills by Importance
 
 SELECT 
     o.title AS occupation,
@@ -21,7 +21,7 @@ ORDER BY f.data_value DESC
 LIMIT 10;
 
 
-# Query 2: Average Knowledge Importance per Occupation
+-- # Query 2: Average Knowledge Importance per Occupation
 
 SELECT 
     o.title AS occupation,
@@ -35,7 +35,7 @@ ORDER BY avg_knowledge_importance DESC
 LIMIT 10;
 
 
-Query 3: Most Critical Abilities for “Software Developers
+-- Query 3: Most Critical Abilities for “Software Developers
 
 SELECT 
     o.title AS occupation,
