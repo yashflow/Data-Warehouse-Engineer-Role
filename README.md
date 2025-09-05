@@ -1,6 +1,6 @@
 # Data-Warehouse-Engineer-Role
 
-## 📌 O*NET → Tulsa For You and Me: Data Warehouse Prototype
+##  O*NET → Tulsa For You and Me: Data Warehouse Prototype
 A lightweight local data warehouse built from O*NET occupation-level data (skills, knowledge, abilities, tasks).  
 This README documents dataset, schema, ETL logic, validation, and sample queries.
 
@@ -15,7 +15,7 @@ This README documents dataset, schema, ETL logic, validation, and sample queries
 
 ## 2. Schema Overview (Star Schema)
 
-### 🗂 Dimension Tables
+###  Dimension Tables
 <table>
 <thead><tr><th>Table</th><th>Key Columns</th></tr></thead>
 <tbody>
@@ -27,7 +27,7 @@ This README documents dataset, schema, ETL logic, validation, and sample queries
 </tbody>
 </table>
 
-### 📊 Fact Tables
+###  Fact Tables
 <table>
 <thead><tr><th>Table</th><th>Measures / Keys</th></tr></thead>
 <tbody>
@@ -42,19 +42,19 @@ This README documents dataset, schema, ETL logic, validation, and sample queries
 
 ## 3. ETL Logic & Validation
 
-### 🔹 ETL Process
+###  ETL Process
 - **Extract** → Read Excel files using `pandas.read_excel()`  
 - **Transform** → Normalize column names, map fields to schema, coerce numeric values, deduplicate dims  
 - **Load** → Write cleaned data into SQLite (`onet_dw.db`) using `DataFrame.to_sql()`  
 
-### 🔹 Validation Checks
-- ✅ Row counts — all tables must have > 0 rows  
-- ✅ % nulls in `data_value` — flag if > 50%  
-- ✅ Foreign Key check — fact `onet_soc_code` must exist in `dim_occupations`  
-- ✅ Numeric statistics — min / max / mean for fact tables  
-- ✅ Duplicate PKs — ensure unique `element_id` / `task_id`  
+###  Validation Checks
+-  Row counts — all tables must have > 0 rows  
+-  % nulls in `data_value` — flag if > 50%  
+-  Foreign Key check — fact `onet_soc_code` must exist in `dim_occupations`  
+-  Numeric statistics — min / max / mean for fact tables  
+-  Duplicate PKs — ensure unique `element_id` / `task_id`  
 
-👉 **Action if failures appear:**
+ **Action if failures appear:**
 - FK mismatches → strip spaces / normalize codes  
 - Suppressed rows (`recommend_suppress='Y'`) → drop or mark  
 - Unexpected numeric ranges → check `scale_id` / `scale_name`  
@@ -63,11 +63,11 @@ This README documents dataset, schema, ETL logic, validation, and sample queries
 
 ## 4. How to Run the Pipeline
 
-### ⚙️ Prerequisites
+###  Prerequisites
 - Python **3.9+**  
 - Libraries: `pandas`, `openpyxl`  
 
-### ⚡ Commands
+###  Commands
 ```bash
 pip install pandas openpyxl
 
