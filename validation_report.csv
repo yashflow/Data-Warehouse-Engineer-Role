@@ -1,0 +1,27 @@
+table,check,result
+dim_occupations,row_count,1016
+dim_skills,row_count,35
+dim_knowledge,row_count,33
+dim_abilities,row_count,52
+dim_tasks,row_count,18797
+fact_skills,row_count,62580
+fact_knowledge,row_count,59004
+fact_abilities,row_count,92976
+fact_task_ratings,row_count,161559
+fact_skills,% nulls in data_value,0.0
+fact_knowledge,% nulls in data_value,0.0
+fact_abilities,% nulls in data_value,0.0
+fact_task_ratings,% nulls in data_value,0.0
+fact_skills,FK check (onet_soc_code),OK
+fact_knowledge,FK check (onet_soc_code),OK
+fact_abilities,FK check (onet_soc_code),OK
+fact_task_ratings,FK check (onet_soc_code),OK
+fact_skills,numeric_stats,"{'min_val': 0.0, 'max_val': 6.0, 'mean_val': 2.4845623202301055}"
+fact_knowledge,numeric_stats,"{'min_val': 0.0, 'max_val': 6.96, 'mean_val': 2.1935778930242016}"
+fact_abilities,numeric_stats,"{'min_val': 0.0, 'max_val': 6.0, 'mean_val': 2.342469024264326}"
+fact_task_ratings,numeric_stats,"{'min_val': 0.0, 'max_val': 100.0, 'mean_val': 20.52318453320459}"
+dim_skills,duplicate_element_id,OK
+dim_knowledge,duplicate_element_id,OK
+dim_abilities,duplicate_element_id,OK
+dim_tasks,duplicate_task_id,OK
+dim_occupations,duplicate_onet_soc_code,OK
