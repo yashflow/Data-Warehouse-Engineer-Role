@@ -1,6 +1,6 @@
 # Data-Warehouse-Engineer-Role
 
-##  O*NET → Tulsa For You and Me: Data Warehouse Prototype
+##  O*NET → Data Warehouse Prototype
 A lightweight local data warehouse built from O*NET occupation-level data (skills, knowledge, abilities, tasks).  
 This README documents dataset, schema, ETL logic, validation, and sample queries.
 
